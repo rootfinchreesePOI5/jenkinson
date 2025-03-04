@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import {Toaster} from 'sonner'
+import { Toaster } from 'sonner'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Gallery from './Pages/Gallery'
@@ -15,25 +15,28 @@ import ChildrenEvent from './Components/ChildrenEvent'
 import Ticker from './Components/TIcker'
 
 function App() {
+  const [menu, setMenu] = useState(false);
   return (
     <div>
-      <Toaster position='top-right' richColors/>
+      <Toaster position='top-right' richColors />
       <div>
-        <Navbar />
+        <Navbar menu={menu} setMenu={setMenu} />
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Gallery" element={<Gallery />} />
-        <Route path='/Categories' element={<Categories/>}/>
-        <Route path='/Categories/:id' element={<Category/>}/>
-        <Route path="/Events/" element={<Events />} />
-        <Route path="/Events/:id" element={<Event />} />
-        <Route path="/Events/children/:child" element={<ChildrenEvent />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-      <Footer/>
-      <Ticker/>
+      <div style={menu === false ? { display: 'block' } : { display: "none" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path='/Categories' element={<Categories />} />
+          <Route path='/Categories/:id' element={<Category />} />
+          <Route path="/Events/" element={<Events />} />
+          <Route path="/Events/:id" element={<Event />} />
+          <Route path="/Events/children/:child" element={<ChildrenEvent />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+        <Ticker />
+      </div>
     </div>
   )
 }

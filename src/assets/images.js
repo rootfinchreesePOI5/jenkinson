@@ -52,6 +52,8 @@ import pause from '../assets/icons/pause.svg'
 import phone from '../assets/icons/phone.svg'
 import location from '../assets/icons/location.svg'
 import time from '../assets/icons/time.svg'
+import menuIcon from '../assets/icons/menu.svg'
+import x from '../assets/icons/x.svg'
 
 //video
 import heroVideo from '../assets/images/jsl-video.mp4'
@@ -104,5 +106,7 @@ export {
     time,
     kid1,
     kid2,
-    kid3
+    kid3,
+    menuIcon,
+    x
 }

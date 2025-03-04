@@ -44,13 +44,13 @@ function ContactUs() {
                     <form onSubmit={onSubmit}>
                         <div className="label">
                             <label>Name*</label>
-                            <input type="text" placeholder='eg: John Doe' />
+                            <input type="text" placeholder='eg: John Doe' required/>
                         </div>
                         <div className="label">
                             <label>Email*</label>
-                            <input type="email" placeholder='eg: user@gmail.com' />
+                            <input type="email" placeholder='eg: user@gmail.com'required/>
                         </div>
-                        <button>Join Us</button>
+                        <button type='submit'>Join Us</button>
                     </form>
                     <div className="phone">
                         <img src={phone} alt="" />
