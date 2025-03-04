@@ -14,11 +14,10 @@ body {
 
 /* header */
 .header {
-  padding: 0.5rem 5%;
+  padding: 0.75rem 5%;
   background: rgba(232, 249, 248, 0.373);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgb(220, 220, 220);
-  display: flex;
   display: grid;
   position: fixed;
   z-index: 5;
@@ -52,6 +51,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.mobile-navbar{
+  display: none;
 }
 
 .navlinks {
@@ -156,7 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 3rem 5% 0rem;
+  padding: 6rem 5% 0rem;
 }
 
 .home-body {
@@ -1326,7 +1329,11 @@ q {
     justify-content: space-between;
   }
 
-  .navbar {
+  .navbar{
+    display: none;
+  }
+
+  .mobile-navbar {
     position: absolute;
     top: 100%;
     min-height: 100vh;
@@ -1420,6 +1427,10 @@ q {
 
   .about-section {
     height: 160vh;
+  }
+
+  .heading{
+    font-size: 1.5rem;
   }
 
   .about-bottom button{
@@ -1563,5 +1574,33 @@ q {
 
   .event-name .name{
     font-size: 1.2rem;
+  }
+
+  /* contact */
+  .main-contact{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .contact-info{
+    flex-direction: column;
+  }
+
+  .contact-form{
+    margin-top: 2rem;
+  }
+
+  .contact-form form input ,
+  .contact-form form textarea{
+    width: 375px;
+  }
+
+  .contact-info{
+    margin: 10px 0;
+  }
+
+  .map-container{
+    margin-top: 30px;
   }
 }

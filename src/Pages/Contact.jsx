@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 
 function Contact() {
 
-  const [result, setResult] = useState("");
+    const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -29,45 +29,47 @@ function Contact() {
             toast.error(data.message)
         }
     };
-  return (
-    <div className='contact'>
-      <div className="about-heading">
-        <h1>Contact Us</h1>
-        <p>"Get in Touch – We're Here to Connect, Support, and Inspire!" 📞✉️🌍</p>
-      </div>
-      {/* Contact Info Section */}
-      <div className="contact-info">
-                <div className="info-box">
-                    <h2>Our Address</h2>
-                    <p>123 Ocean Avenue, Singapore</p>
-                </div>
-                <div className="info-box">
-                    <h2>Email Us</h2>
-                    <p>info@jenkinsonsealife.com</p>
-                </div>
-                <div className="info-box">
-                    <h2>Call Us</h2>
-                    <p>+65 1234 5678</p>
-                </div>
+    return (
+        <div className='contact'>
+            <div className="about-heading">
+                <h1>Contact Us</h1>
+                <p>"Get in Touch – We're Here to Connect, Support, and Inspire!" 📞✉️🌍</p>
             </div>
+            {/* Contact Info Section */}
+            <div className="main-contact">
+                <div className="contact-info">
+                    <div className="info-box">
+                        <h2>Our Address</h2>
+                        <p>123 Ocean Avenue, Singapore</p>
+                    </div>
+                    <div className="info-box">
+                        <h2>Email Us</h2>
+                        <p>info@jenkinsonsealife.com</p>
+                    </div>
+                    <div className="info-box">
+                        <h2>Call Us</h2>
+                        <p>+65 1234 5678</p>
+                    </div>
+                </div>
 
-            {/* Contact Form */}
-            <div className="contact-form">
-                <h2>Send Us a Message</h2>
-                <form onSubmit={onSubmit}>
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Your Email" required />
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                {/* Contact Form */}
+                <div className="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form onSubmit={onSubmit}>
+                        <input type="text" placeholder="Your Name" required />
+                        <input type="email" placeholder="Your Email" required />
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
 
             {/* Google Map Component */}
             <div className="map-container">
                 <GoogleMapComponent />
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Contact

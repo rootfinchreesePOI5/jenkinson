@@ -18,7 +18,7 @@ function App() {
   const [menu, setMenu] = useState(false);
   return (
     <div>
-      <Toaster position='top-right' richColors />
+      <Toaster position='bottom-center' richColors />
       <div>
         <Navbar menu={menu} setMenu={setMenu} />
       </div>

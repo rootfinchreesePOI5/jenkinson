@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Categories() {
   return (
     <div className='categories'>
-      <h1 className="heading"> Marine Life Categories:</h1>
+      <h1 className="heading">Categories</h1>
       <div className="categories-container">
         <h1 className='categories-heading'>Marine Life Animals</h1>
         <hr  className='categories-arrow' />

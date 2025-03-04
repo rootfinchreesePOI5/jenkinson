@@ -34,7 +34,31 @@ function Navbar({menu , setMenu}) {
         <img onClick={() => { navigate('/'), scrollTo(0, 0) }} className='logoImg' src={logo} alt="" />
         {/* <p>Jenkinson Sea Life</p> */}
       </div>
-      <nav style={menu === false ? {transform:'translateX(-100%)'} : {transform:'translateX(0%)'}} className='navbar'>
+      {/* mobile navbar */}
+      <nav style={menu === false ? {transform:'translateX(-100%)'} : {transform:'translateX(0%)'}} className='mobile-navbar'>
+        <div className='navlinks'>
+          {
+            links.map((item, index) => {
+              return <NavLink onClick={switchMenu} key={index} to={`${item.link}`}>
+                <p>{item.name}</p>
+                <hr />
+              </NavLink>
+            })
+          }
+        </div>
+        <div className='explore'>
+          <div className='count'>
+            <p className='dot'></p>
+            <div className="number">
+              <p>Online Visitors:</p>
+              <span>{count}</span>
+            </div>
+          </div>
+          <p onClick={() =>{navigate('/Contact'), scrollTo(0 , 0)}} className='txt'>Find Us <img src={pin} alt="" /></p>
+        </div>
+      </nav>
+      {/* desktop navbar */}
+      <nav className='navbar'>
         <div className='navlinks'>
           {
             links.map((item, index) => {
