@@ -38,7 +38,9 @@ const Ticker = () => {
   return (
     <div className="ticker-container">
       <div className="ticker">
-        <p>📍 {location} | 🕒 {dateTime} | Stay Updated with Us!</p>
+        <p>📍 {location}</p>
+        <p>| 🕒 {dateTime}</p>
+        <p>| Stay Updated with Us!</p>
       </div>
     </div>
   );

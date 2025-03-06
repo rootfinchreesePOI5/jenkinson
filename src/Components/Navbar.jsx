@@ -3,14 +3,15 @@ import { logo, menuIcon, pin, x } from '../assets/images.js'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { links } from '../assets/assets.js'
 
-function Navbar({menu , setMenu}) {
+function Navbar({ menu, setMenu }) {
   const [count, setCount] = useState(() => {
     return localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 1;
   });
 
-  const switchMenu = () =>{
-    menu === false ? setMenu(true) : setMenu(false)
-  }
+  const switchMenu = () => {
+    setMenu((prev) => !prev); // Toggle menu state
+  };
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,7 +21,7 @@ function Navbar({menu , setMenu}) {
         localStorage.setItem('count', newCount);
         return newCount;
       });
-    }, 1000);
+    }, 10000);
 
     return () => {
       clearInterval(interval);
@@ -31,20 +32,18 @@ function Navbar({menu , setMenu}) {
   return (
     <div className='header'>
       <div className='logo'>
-        <img onClick={() => { navigate('/'), scrollTo(0, 0) }} className='logoImg' src={logo} alt="" />
-        {/* <p>Jenkinson Sea Life</p> */}
+        <img onClick={() => { navigate('/'); scrollTo(0, 0) }} className='logoImg' src={logo} alt="Logo" />
       </div>
-      {/* mobile navbar */}
-      <nav style={menu === false ? {transform:'translateX(-100%)'} : {transform:'translateX(0%)'}} className='mobile-navbar'>
-        <div className='navlinks'>
-          {
-            links.map((item, index) => {
-              return <NavLink onClick={switchMenu} key={index} to={`${item.link}`}>
-                <p>{item.name}</p>
-                <hr />
-              </NavLink>
-            })
-          }
+
+      {/* Mobile Navbar */}
+      <nav className='mobile-navbar' style={menu === false ? {transform:'translateX(-100%)'} : {transform:'translateX(0%)'}} >
+        <div className='mobile-links'>
+          {links.map((item, index) => (
+            <NavLink onClick={switchMenu} key={index} to={item.link}>
+              <p>{item.name}</p>
+              <hr />
+            </NavLink>
+          ))}
         </div>
         <div className='explore'>
           <div className='count'>
@@ -54,20 +53,21 @@ function Navbar({menu , setMenu}) {
               <span>{count}</span>
             </div>
           </div>
-          <p onClick={() =>{navigate('/Contact'), scrollTo(0 , 0)}} className='txt'>Find Us <img src={pin} alt="" /></p>
+          <p onClick={() => { navigate('/Contact'); scrollTo(0, 0) }} className='txt'>
+            Find Us <img src={pin} alt="Location" />
+          </p>
         </div>
       </nav>
-      {/* desktop navbar */}
+
+      {/* Desktop Navbar */}
       <nav className='navbar'>
         <div className='navlinks'>
-          {
-            links.map((item, index) => {
-              return <NavLink onClick={switchMenu} key={index} to={`${item.link}`}>
-                <p>{item.name}</p>
-                <hr />
-              </NavLink>
-            })
-          }
+          {links.map((item, index) => (
+            <NavLink  key={index} to={item.link}>
+              <p>{item.name}</p>
+              <hr />
+            </NavLink>
+          ))}
         </div>
         <div className='explore'>
           <div className='count'>
@@ -77,13 +77,16 @@ function Navbar({menu , setMenu}) {
               <span>{count}</span>
             </div>
           </div>
-          <p onClick={() =>{navigate('/Contact'), scrollTo(0 , 0)}} className='txt'>Find Us <img src={pin} alt="" /></p>
+          <p onClick={() => { navigate('/Contact'); scrollTo(0, 0) }} className='txt'>
+            Find Us <img src={pin} alt="Location" />
+          </p>
         </div>
       </nav>
 
-      <img className='menu-toogle' onClick={switchMenu} src={menu === false ? menuIcon : x} alt="" />
+      {/* Menu Toggle Button */}
+      <img className='menu-toogle' onClick={switchMenu} src={menu ? x : menuIcon} alt="Menu Toggle" />
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

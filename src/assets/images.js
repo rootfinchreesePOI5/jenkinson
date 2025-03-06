@@ -23,6 +23,25 @@ import client2 from '../assets/images/client3.jpg'
 import client3 from '../assets/images/client6.jpg'
 import footerimg from '../assets/images/footer.jpg'
 
+
+import angel from '../assets/images/angel fish.jpg'
+import beta from '../assets/images/beta fish.jpg'
+import box from '../assets/images/box.jpg'
+import brain from  '../assets/images/brain.jpg'
+import clown from '../assets/images/clown fish.jpg'
+import crab from '../assets/images/crab.jpg'
+import lion from '../assets/images/lion fish.jpg'
+import lobster from '../assets/images/lobstar.jpg'
+import moonfish from '../assets/images/moon.jpg'
+import nautilus from '../assets/images/nautilus.jpg'
+import orca from '../assets/images/orca.jpg'
+import otter from '../assets/images/otter.jpg'
+import octupus from '../assets/images/octupus.jpg'
+import solt from '../assets/images/soltwater.jpg'
+import squid from '../assets/images/squid.jpg'
+import staghorn from '../assets/images/staghorn.jpg'
+
+
 import one from '../assets/images/1.jpg'
 import two from '../assets/images/2.jpg'
 import three from '../assets/images/3.jpg'
@@ -58,8 +77,23 @@ import x from '../assets/icons/x.svg'
 //video
 import heroVideo from '../assets/images/jsl-video.mp4'
 
-
 export {
+    angel,
+    beta,
+    box,
+    brain,
+    clown,
+    crab,
+    lion,
+    lobster,
+    moonfish,
+    nautilus,
+    orca,
+    otter,
+    octupus,
+    solt,
+    squid,
+    staghorn,
     logo,
     heroImg,
     pin,
@@ -109,4 +143,4 @@ export {
     kid3,
     menuIcon,
     x
-}
+};

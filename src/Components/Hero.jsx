@@ -3,7 +3,7 @@ import { arrow, heroImg } from "../assets/images";
 import { useNavigate } from "react-router-dom";
 
 function Hero() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="hero">
       {/* Hero Content */}
@@ -15,7 +15,7 @@ function Hero() {
               <div className="arrow" >
                 <img src={arrow} alt="" />
               </div>
-              <p>Book An Event Now</p>
+              <p>Explore Our Events</p>
             </button>
           </div>
 

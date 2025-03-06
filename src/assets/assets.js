@@ -1,10 +1,16 @@
 import {
   alex_wong,
+    angel,
+    beta,
+    box,
+    brain,
     client1,
   client2,
   client3,
+  clown,
   conservation_workshop,
   corals,
+  crab,
   crustaceans,
   david_sima,
   dolphin,
@@ -16,18 +22,28 @@ import {
   kid1,
   kid2,
   kid3,
+  lion,
   lisa_matthews,
+  lobster,
   mammals,
   mark_spencer,
   mike_tan,
   mollusks,
+  moonfish,
+  nautilus,
+  octupus,
   olivia_bennett,
   one,
+  orca,
+  otter,
   reptiles,
   sarah_johnson,
   shark,
   shark_awareness,
+  solt,
   sophia_lee,
+  squid,
+  staghorn,
   talia_johns,
   three,
   turtle,
@@ -70,22 +86,22 @@ export const categories = [
     animals: [
       {
         name: "Clownfish",
-        image: "images/fish/clownfish.jpg",
+        image: clown,
         description: "Brightly colored fish popularized by 'Finding Nemo'.",
       },
       {
         name: "Angelfish",
-        image: "images/fish/angelfish.jpg",
+        image: angel,
         description: "Beautifully striped fish found in tropical reefs.",
       },
       {
         name: "Lionfish",
-        image: "images/fish/lionfish.jpg",
+        image: lion,
         description: "Venomous fish with striking spines and patterns.",
       },
       {
         name: "Betta Fish",
-        image: "images/fish/betta.jpg",
+        image: beta,
         description: "Colorful freshwater fish known for its aggression.",
       },
     ],
@@ -99,18 +115,18 @@ export const categories = [
     animals: [
       {
         name: "Dolphin",
-        image: "images/mammals/dolphin.jpg",
+        image: dolphin,
         description: "Highly intelligent and friendly marine mammals.",
       },
       {
         name: "Orca (Killer Whale)",
-        image: "images/mammals/orca.jpg",
+        image: orca,
         description:
           "Apex predator known for its striking black-and-white pattern.",
       },
       {
         name: "Sea Otter",
-        image: "images/mammals/sea_otter.jpg",
+        image: otter,
         description:
           "Adorable marine mammals known for floating on their backs.",
       },
@@ -125,12 +141,12 @@ export const categories = [
     animals: [
       {
         name: "Sea Turtle",
-        image: "images/reptiles/sea_turtle.jpg",
+        image: turtle,
         description: "Ancient reptiles known for their long migrations.",
       },
       {
         name: "Saltwater Crocodile",
-        image: "images/reptiles/crocodile.jpg",
+        image: solt,
         description:
           "The largest living reptile, often found in coastal areas.",
       },
@@ -144,12 +160,12 @@ export const categories = [
     animals: [
       {
         name: "Lobster",
-        image: "images/crustaceans/lobster.jpg",
+        image: lobster,
         description: "A deep-sea crustacean with strong claws.",
       },
       {
         name: "Crab",
-        image: "images/crustaceans/crab.jpg",
+        image: crab,
         description: "Side-walking crustaceans found on beaches and reefs.",
       },
     ],
@@ -163,12 +179,12 @@ export const categories = [
     animals: [
       {
         name: "Moon Jelly",
-        image: "images/jellyfish/moon_jelly.jpg",
+        image: moonfish,
         description: "Translucent jellyfish commonly found in oceans.",
       },
       {
         name: "Box Jellyfish",
-        image: "images/jellyfish/box_jelly.jpg",
+        image: box,
         description: "One of the most venomous marine animals.",
       },
     ],
@@ -182,17 +198,17 @@ export const categories = [
     animals: [
       {
         name: "Octopus",
-        image: "images/mollusks/octopus.jpg",
+        image: octupus,
         description: "Highly intelligent cephalopod known for problem-solving.",
       },
       {
         name: "Squid",
-        image: "images/mollusks/squid.jpg",
+        image: squid,
         description: "Fast-swimming cephalopod with ink defense mechanism.",
       },
       {
         name: "Nautilus",
-        image: "images/mollusks/nautilus.jpg",
+        image: nautilus,
         description: "A prehistoric mollusk with a coiled shell.",
       },
     ],
@@ -206,12 +222,12 @@ export const categories = [
     animals: [
       {
         name: "Brain Coral",
-        image: "images/corals/brain_coral.jpg",
+        image: brain,
         description: "Coral with a distinctive brain-like structure.",
       },
       {
         name: "Staghorn Coral",
-        image: "images/corals/staghorn_coral.jpg",
+        image: staghorn,
         description: "A branching coral species vital for reefs.",
       },
     ],

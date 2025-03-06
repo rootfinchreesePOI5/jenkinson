@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { aboutImg, arrow, heroVideo, pause, playVid } from '../assets/images'
+import { aboutImg , heroVideo, pause, playVid } from '../assets/images'
 import { useNavigate } from 'react-router-dom';
 
 function AboutSection() {
@@ -12,12 +12,12 @@ function AboutSection() {
         <div className="about-top">
           <div className='about-text'>
             <p>
-              <h5>Welcome to Jenkinson Sea Life:</h5>
+              <span>Welcome to Jenkinson Sea Life:</span>
               <span>This a one-of-a-kind marine sanctuary located on the boardwalk in Point Pleasant Beach, Singapore.</span>
             </p>
 
             <p>
-              <h5>Our mission:</h5>
+              <span>Our mission:</span>
               <span>To educate, inspire, and foster a deep appreciation for marine life through immersive experiences, interactive exhibits, and conservation efforts.</span>
             </p>
 
