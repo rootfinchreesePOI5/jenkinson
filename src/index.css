@@ -1472,7 +1472,7 @@ q {
 }
 
 .other-categories ul a{
-  background-color: #d1d1d1;
+  background-color: #42fff9;
   color: rgb(0, 0, 0);
   text-decoration: none;
   height: 5vh;
@@ -1553,6 +1553,7 @@ q {
   .explore .count{
     width: 50%;
     background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1660,9 +1661,7 @@ q {
     grid-template-columns: 1fr ;
   }
 
-  .categories-heading {
-    width: 100%;
-  }
+
 
   .categories-branches {
     border-left: 2px solid #d1d1d1;
@@ -1770,7 +1769,18 @@ q {
   .event-description-text{
     padding: 1rem 0.75rem;
   }
+  
+  .review-container {
+    flex-direction: column;
+  }
 
+  .visitor-rating h1{
+    font-size: 1.25rem;
+  }
+
+  .review-container input{
+    width: 300px;
+  }
   .id{
     width: 50px;
     height: 50px;
@@ -1832,5 +1842,38 @@ q {
 
   .map-container{
     margin-top: 30px;
+  }
+
+  .picked-category{
+    padding: 1rem;
+  }
+
+  .picked-category p{
+    font-size: 0.65rem;
+  }
+
+  .categories-heading{
+    font-size: 0.95rem;
+    width: 60%;
+  }
+
+  .picked-category-items{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+
+  .picked-category-item{
+    min-height: 10vh;
+    width: fit-content;
+  }
+
+
+  .other-categories h1{
+    font-size: 1.25rem;
+  }
+
+  .other-categories ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 }
