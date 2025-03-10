@@ -1471,7 +1471,7 @@ q {
   width: 100%;
 }
 
-.other-categories ul a{
+.other-categories ul div{
   background-color: #42fff9;
   color: rgb(0, 0, 0);
   text-decoration: none;
