@@ -1656,6 +1656,7 @@ q {
   .about-bottom button{
     display: none;
   }
+
   
   .category-items {
     grid-template-columns: 1fr ;
@@ -1849,7 +1850,12 @@ q {
   }
 
   .picked-category p{
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .category-animal img{
+    width: 40%;
   }
 
   .categories-heading{

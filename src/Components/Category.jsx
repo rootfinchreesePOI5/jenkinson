@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { categories } from '../assets/assets';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 function Category() {
   const [myCategory, setCategory] = useState([]);
@@ -13,7 +13,8 @@ function Category() {
 
   useEffect(() => {
     applyFilter();
-  }, [params])
+  }, [params]);
+  const navigate = useNavigate()
   return (
     <div className='category'>
       {
@@ -31,11 +32,11 @@ function Category() {
               <div className='picked-category-items'>
                 {
                   item.animals.map((item, index) => (
-                    <Link to={`/Categories/${item.name}`} key={index} className='picked-category-item'>
+                    <div key={index} className='picked-category-item'>
                       <img src={item.image} alt="" />
                       <h5>{item.name}</h5>
                       <p>{item.description}</p>
-                    </Link>
+                    </div>
                   ))
                 }
               </div>
@@ -45,7 +46,7 @@ function Category() {
               <ul>
                 {
                   categories.map((item, index) => {
-                    return <Link key={index} to={`/Categories/${item.name}`}>{item.name}</Link>
+                    return <div key={index} onClick={() => { navigate(`/Categories/${item.name}`), scrollTo(0, 0) }}>{item.name}</div>
                   })
                 }
               </ul>
