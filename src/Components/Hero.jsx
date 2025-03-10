@@ -23,11 +23,10 @@ function Hero() {
             <div className="hero-text">
               <h1>JENKINSON</h1>
               <p>SEA LIFE</p>
-              <h5>EXPLORE THE WONDERS OF THE OCEAN</h5>
             </div>
-            <div className="heroImg">
+            {/* <div className="heroImg">
               <img src={heroImg} alt="Sea Life" />
-            </div>
+            </div> */}
           </div>
 
           <div className="hero-item3">

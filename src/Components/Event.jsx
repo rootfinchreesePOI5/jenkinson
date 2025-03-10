@@ -75,7 +75,7 @@ function Event() {
                                 }
                             </div>
                             <div className='events-btn'>
-                                <button onClick={() => { navigate('/Events'), scrollTo(0, 0) }} >Explore more</button>
+                                <button onClick={() => { navigate('/Events'), scrollTo(0, 0) }} >Check Other Events</button>
                             </div>
                         </div>
                     })

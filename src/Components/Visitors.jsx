@@ -1,7 +1,21 @@
-import React from 'react'
-import { Review } from '../assets/assets'
+import React, { useState } from 'react'
+import { ratingStars, Review } from '../assets/assets'
+import { star, starfilled } from '../assets/images'
+import {toast } from 'sonner'
 
 function Visitors() {
+    const [rating, setRating] = useState(0);
+    const [reviwText , setText] = useState('')
+
+    const ratingStars = Array(5)
+        .fill(null)
+        .map((_, index) => (index < rating ? starfilled : star));
+
+    const submitReviw = (e) => {
+        e.preventDefault();
+        setRating(0);
+        toast.success('Thanks for the review');
+    }
     return (
         <div className='Visitors'>
             <div className="visitors-heading">
@@ -24,6 +38,25 @@ function Visitors() {
                         </div>
                     })
                 }
+            </div>
+            <div className="visitor-rating">
+                <h1>Rate Us and Review</h1>
+                <div>
+                    {ratingStars.map((item, index) => (
+                        <img
+                            className="stars"
+                            key={index}
+                            src={item}
+                            alt={`Star ${index + 1}`}
+                            onClick={() => setRating(index + 1)} // Set rating on click
+                            style={{ cursor: "pointer" }} // Make it clickable
+                        />
+                    ))}
+                </div>
+                <form onSubmit={submitReviw} className="review-container">
+                    <input onChange={(e) => setText(e.target.value)} type="text" required placeholder='Your review' />
+                    <button  type='submit'>Submit</button>
+                </form>
             </div>
         </div>
     )

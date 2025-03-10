@@ -22,7 +22,7 @@ function ChildrenEvent() {
                     {
                         childEvents.map((item, index) => {
                             return <div>
-                                <Link to={`/Events/${item.name}`} key={index} className='event-description'>
+                                <div  key={index} className='event-description'>
                                     <div className='event-description-text'>
                                         <p className='text1'>
                                             <span className='name'>{item.name}</span>
@@ -55,7 +55,7 @@ function ChildrenEvent() {
                                     <div className='event-description-img' >
                                         <img src={item.image2} alt="" />
                                     </div>
-                                </Link>
+                                </div>
                                 <div className='event-team'>
                                     {
                                         item.activities.map((item, index) => (
@@ -75,7 +75,7 @@ function ChildrenEvent() {
                                     }
                                 </div>
                                 <div className='events-btn'>
-                                    <button onClick={() => { navigate('/Events'), scrollTo(0, 0) }} >Explore more</button>
+                                    <button onClick={() => { navigate('/Events'), scrollTo(0, 0) }} >Check Other Events</button>
                                 </div>
                             </div>
                         })

@@ -44,6 +44,7 @@ import {
   sophia_lee,
   squid,
   staghorn,
+  star,
   talia_johns,
   three,
   turtle,
@@ -635,3 +636,5 @@ export const galleryImages = [
   { id: 9, src: mike_tan, alt: "A Child Holding a Starfish" },
   { id: 10, src: emily_carter, alt: "Sunset Over the Ocean" },
 ];
+
+export const ratingStars = [star , star , star , star , star]

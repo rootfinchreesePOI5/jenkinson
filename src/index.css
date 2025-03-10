@@ -8,16 +8,15 @@
 }
 
 body {
-  background: rgb(238, 246, 246);
+  background: rgb(215, 253, 253);
   color: rgb(0, 8, 15);
 }
 
 /* header */
 .header {
   padding: 0.75rem 5%;
-  background: rgba(232, 249, 248, 0.373);
+  background: rgba(0, 0, 0, 0.295);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgb(220, 220, 220);
   display: grid;
   position: fixed;
   z-index: 5;
@@ -64,7 +63,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 400;
 }
 
@@ -74,7 +73,7 @@ body {
 }
 
 .navbar a.active {
-  color: rgb(6, 176, 255);
+  color: rgb(2, 47, 68);
 }
 
 .navbar a hr {
@@ -137,7 +136,7 @@ body {
   font-size: 1em;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, #000000 10%, #313131 20%);
+  background: linear-gradient(90deg, #ffffff 10%, #ffffff 20%);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
@@ -193,7 +192,7 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
-  background-image: url('./assets/images/horebg.jpg');
+  background-image: url('./assets/images/Untitled design (9).jpg');
   background-size: cover;
 }
 
@@ -232,7 +231,7 @@ body {
 .hero-item3 h5 {
   font-size: 1.25rem;
   font-weight: 300;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .hero-item1 button {
@@ -376,8 +375,6 @@ body {
 
 .about-section {
   min-height: 92.5vh;
-  background: rgb(223, 233, 237);
-  border-radius: 50px 50px 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -756,6 +753,59 @@ q {
   gap: 0.5rem;
 }
 
+.visitor-rating{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(188, 251, 255);
+  width: 100%;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+}
+
+.review-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.review-container input{
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid;
+  font-size: 1rem;
+}
+
+.review-container button{
+  width: 100px;
+  height: 5vh;
+  border: none;
+  background: #0093c8;
+  color: white;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.review-container button:active{
+  scale: 0.95;
+}
+.visitor-rating h1{
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0093c8;
+}
+
+.stars{
+  width: 25px;
+  fill: #ffc73a;
+  stroke: #ffc73a;
+  color: red;
+}
+
 /* location and contact */
 .ContactUs {
   display: flex;
@@ -987,6 +1037,7 @@ q {
 
 .event-description-img img {
   width: 100%;
+  border-radius: 7px;
 }
 
 .event-description-text {
@@ -1458,7 +1509,8 @@ q {
     left: 0;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(0, 157, 255, 0.03);
+    backdrop-filter: blur(10px);
     transition: 0.4s ease-in-out;
   }
 
@@ -1500,6 +1552,16 @@ q {
 
   .explore .count{
     width: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .txt{
+    background: linear-gradient(90deg, #000000 10%, #000000 20%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
 
   .menu-toogle{
@@ -1513,6 +1575,8 @@ q {
   .hero {
     height: 70vh;
     padding: 0;
+    background-image: url('./assets/images/2.jpg');
+    background-position: 50%;
   }
 
   .hero-container{
@@ -1572,7 +1636,7 @@ q {
   }
 
   .about-section {
-    height: 160vh;
+    height: 145vh;
   }
 
   .heading{
@@ -1581,7 +1645,7 @@ q {
 
   .about-bottom button{
     position: absolute;
-    top: 220%;
+    top: 210%;
     width: 50%;
   }
   
@@ -1723,6 +1787,19 @@ q {
   }
 
   /* contact */
+
+  .contact , .about , .gallery{
+    padding-top: 6rem;
+  }
+
+  .about-heading h1 , .gallery-heading h1{
+    font-size: 1.5rem;
+  }
+
+  .about-heading p , .gallery-heading p{
+    font-size: 0.95rem;
+    text-align: center;
+  }
   .main-contact{
     display: flex;
     flex-direction: column-reverse;
@@ -1739,7 +1816,7 @@ q {
 
   .contact-form form input ,
   .contact-form form textarea{
-    width: 375px;
+    width: 305px;
   }
 
   .contact-info{

@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { logo, menuIcon, pin, x } from '../assets/images.js'
+import { logo, menuIcon, pin, whiteloc, x } from '../assets/images.js'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { links } from '../assets/assets.js'
 
 function Navbar({ menu, setMenu }) {
-  const [count, setCount] = useState(() => {
-    return localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 1;
-  });
 
   const switchMenu = () => {
     setMenu((prev) => !prev); // Toggle menu state
@@ -14,20 +11,17 @@ function Navbar({ menu, setMenu }) {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((prevCount) => {
-        const newCount = prevCount + 1;
-        localStorage.setItem('count', newCount);
-        return newCount;
-      });
-    }, 10000);
 
-    return () => {
-      clearInterval(interval);
-      localStorage.removeItem('count');
-    };
-  }, []);
+  const [count, setCount] = useState(() => {
+    return localStorage.getItem("count") ? parseInt(localStorage.getItem("count")) : 1;
+  });
+
+  useEffect(() => {
+    const newCount = count + 1; // Increment count
+    setCount(newCount);
+    localStorage.setItem("count", newCount);
+  }, []); // Run only once on mount (refresh)
+
 
   return (
     <div className='header'>
@@ -73,12 +67,12 @@ function Navbar({ menu, setMenu }) {
           <div className='count'>
             <p className='dot'></p>
             <div className="number">
-              <p>Online Visitors:</p>
+              <p>Visitor Count:</p>
               <span>{count}</span>
             </div>
           </div>
           <p onClick={() => { navigate('/Contact'); scrollTo(0, 0) }} className='txt'>
-            Find Us <img src={pin} alt="Location" />
+            Find Us <img src={whiteloc} alt="Location" />
           </p>
         </div>
       </nav>

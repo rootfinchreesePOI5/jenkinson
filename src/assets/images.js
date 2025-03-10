@@ -73,6 +73,9 @@ import location from '../assets/icons/location.svg'
 import time from '../assets/icons/time.svg'
 import menuIcon from '../assets/icons/menu.svg'
 import x from '../assets/icons/x.svg'
+import whiteloc from '../assets/icons/whiteloc.svg'
+import star from '../assets/icons/star.svg'
+import starfilled from '../assets/icons/gold.svg'
 
 //video
 import heroVideo from '../assets/images/jsl-video.mp4'
@@ -142,5 +145,8 @@ export {
     kid2,
     kid3,
     menuIcon,
-    x
+    x,
+    whiteloc,
+    star,
+    starfilled
 };
