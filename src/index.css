@@ -1489,6 +1489,13 @@ q {
   color: white;
 }
 
+.aboutpage-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3;
+  padding: 5rem;
+}
+
 @media (max-width: 764px) {
   /* navbar */
   .header{
@@ -1881,5 +1888,16 @@ q {
   .other-categories ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .aboutpage-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 3;
+    padding: 1rem;
+  }
+
+  .aboutpage-container img{
+    width: 100%;
   }
 }
