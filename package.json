@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
     "@tailwindcss/vite": "^4.0.8",
-    "axios": "^1.7.9",
+    "axios": "^1.8.3",
     "framer-motion": "^12.4.7",
     "leaflet": "^1.9.4",
     "moment-timezone": "^0.5.47",

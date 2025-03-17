@@ -13,6 +13,7 @@ function Visitors() {
 
     const submitReviw = (e) => {
         e.preventDefault();
+        document.getElementById('text').value = ''
         setRating(0);
         toast.success('Thanks for the review');
     }
@@ -54,7 +55,7 @@ function Visitors() {
                     ))}
                 </div>
                 <form onSubmit={submitReviw} className="review-container">
-                    <input onChange={(e) => setText(e.target.value)} type="text" required placeholder='Your review' />
+                    <input id='text' onChange={(e) => setText(e.target.value)} type="text" required placeholder='Your review' />
                     <button  type='submit'>Submit</button>
                 </form>
             </div>
