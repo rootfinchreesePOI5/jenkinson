@@ -1,8 +1,140 @@
-# React + Vite
+# 🌊 Jenkinson Sea Life SPA Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+The **Jenkinson Sea Life SPA** is an interactive and educational web application designed to showcase marine life exhibits, promote conservation awareness, and provide visitors with details about upcoming events and programs. 
 
-Currently, two official plugins are available:
+This **Single Page Application (SPA)** offers an engaging user experience with seamless navigation, real-time updates, and a mobile-friendly design.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🎯 Features
+👉 **Home Page** – Overview of Jenkinson Sea Life with intuitive navigation.  
+👉 **Exhibits Page** – Detailed information on marine species with high-quality images and videos.  
+👉 **Upcoming Events System** – Allows users to view and register for educational programs.  
+👉 **Contact Page** – Includes a form for inquiries and an embedded Google Map for easy navigation.  
+👉 **Automated Email Confirmations** – Users receive emails upon successful event registration and inquiry submission.  
+
+---
+
+## 🏠 Tech Stack
+| Category   | Technologies Used |
+|------------|------------------|
+| **Frontend**  | React.js, CSS3 |
+| **Backend**   | Node.js, Express.js |
+| **Database**  | MongoDB |
+| **APIs**      | Google Maps API, Moment.js |
+| **Deployment**| Vercel (Frontend), Render (Backend) |
+
+---
+
+## 🌜 Project Structure
+```
+jenkinson-sealife/
+│── public/
+│── src/
+│   ├── components/  # Reusable UI components
+│   ├── pages/       # Main pages (Home, Exhibits, Events, Contact)
+│   ├── styles/      # CSS stylesheets
+│   ├── App.js       # Main application file
+│   ├── index.js     # Entry point
+│── server/
+│   ├── models/      # Database models
+│   ├── routes/      # API endpoints
+│   ├── controllers/ # Business logic
+│   ├── server.js    # Express.js server setup
+│── package.json     # Project dependencies
+```
+
+---
+
+## 🚀 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/your-username/jenkinson-sea-life.git
+cd jenkinson-sea-life
+```
+
+### **2️⃣ Install Dependencies**
+#### Frontend:
+```sh
+cd client
+npm install
+```
+#### Backend:
+```sh
+cd server
+npm install
+```
+
+### **3️⃣ Set Up Environment Variables**
+Create a `.env` file in the `server/` directory and configure:
+```env
+MONGO_URI=your-mongodb-connection-string
+PORT=5000
+EMAIL_SERVICE_API_KEY=your-email-api-key
+```
+
+### **4️⃣ Run the Application**
+#### Backend Server:
+```sh
+cd server
+npm start
+```
+#### Frontend Client:
+```sh
+cd client
+npm start
+```
+The project should now be running at `http://localhost:3000/`
+
+---
+
+## 🔍 Screenshots
+📌 Include screenshots of your project here (Home, Exhibits, Events, Contact page, etc.)
+
+---
+
+## 📚 User Guide
+1. **Navigate to the Homepage** – Explore exhibits and upcoming events.
+2. **View Marine Species** – Click on exhibits to learn more about marine life.
+3. **Register for Events** – Fill out the form to book an educational tour.
+4. **Contact Us** – Submit inquiries or locate the facility via Google Maps.
+
+---
+
+## 🛠️ Developer Guide
+- **Frontend hosted on** Vercel
+- **Backend hosted on** Render
+- **Google Maps API** for location services
+- **Moment.js** for event scheduling
+
+---
+
+## 🎯 Future Enhancements
+💡 Live event streaming for virtual tours.
+💡 Interactive quizzes and learning modules.
+💡 Membership system for exclusive content.
+
+---
+
+## 📢 Contributors
+- **Yussuf Hassan Muse** – Frontend Development & UI/UX
+- **Abdimalik Mohamed Mohamud** – Backend & API Integration
+- **Abdiaziz Mohamed Abdirahman** – Responsive Design & Deployment
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ Acknowledgment
+We extend our gratitude to **Jenkinson Sea Life** for providing the opportunity to contribute to marine conservation efforts. Special thanks to our instructors and teammates for their unwavering support.
+
+---
+
+## 🤝 Connect With Us!
+📩 **Email:** your-email@example.com  
+🌍 **Website:** Jenkinson Sea Life
