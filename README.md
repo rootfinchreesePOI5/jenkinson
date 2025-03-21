@@ -90,9 +90,6 @@ The project should now be running at `http://localhost:3000/`
 
 ---
 
-## 🔍 Screenshots
-📌 Include screenshots of your project here (Home, Exhibits, Events, Contact page, etc.)
-
 ---
 
 ## 📚 User Guide
@@ -105,7 +102,6 @@ The project should now be running at `http://localhost:3000/`
 
 ## 🛠️ Developer Guide
 - **Frontend hosted on** Vercel
-- **Backend hosted on** Render
 - **Google Maps API** for location services
 - **Moment.js** for event scheduling
 
@@ -119,8 +115,8 @@ The project should now be running at `http://localhost:3000/`
 ---
 
 ## 📢 Contributors
-- **Yussuf Hassan Muse** – Frontend Development & UI/UX
-- **Abdimalik Mohamed Mohamud** – Backend & API Integration
+- **Yussuf Hassan Muse** – Frontend Development
+- **Abdimalik Mohamed Mohamud** – UI/UX Integration
 - **Abdiaziz Mohamed Abdirahman** – Responsive Design & Deployment
 
 ---
@@ -134,7 +130,3 @@ This project is licensed under the **MIT License**.
 We extend our gratitude to **Jenkinson Sea Life** for providing the opportunity to contribute to marine conservation efforts. Special thanks to our instructors and teammates for their unwavering support.
 
 ---
-
-## 🤝 Connect With Us!
-📩 **Email:** your-email@example.com  
-🌍 **Website:** Jenkinson Sea Life
