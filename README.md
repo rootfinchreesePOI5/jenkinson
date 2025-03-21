@@ -21,9 +21,8 @@ This **Single Page Application (SPA)** offers an engaging user experience with s
 |------------|------------------|
 | **Frontend**  | React.js, CSS3 |
 | **Backend**   | Node.js, Express.js |
-| **Database**  | MongoDB |
 | **APIs**      | Google Maps API, Moment.js |
-| **Deployment**| Vercel (Frontend), Render (Backend) |
+| **Deployment**| Vercel (Frontend) |
 
 ---
 
