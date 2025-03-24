@@ -50,7 +50,7 @@ jenkinson-sealife/
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-username/jenkinson-sea-life.git
+git clone https://github.com/rootfinchreesePOI5/jenkinson.git
 cd jenkinson-sea-life
 ```
 
@@ -66,20 +66,7 @@ cd server
 npm install
 ```
 
-### **3️⃣ Set Up Environment Variables**
-Create a `.env` file in the `server/` directory and configure:
-```env
-MONGO_URI=your-mongodb-connection-string
-PORT=5000
-EMAIL_SERVICE_API_KEY=your-email-api-key
-```
-
 ### **4️⃣ Run the Application**
-#### Backend Server:
-```sh
-cd server
-npm start
-```
 #### Frontend Client:
 ```sh
 cd client
