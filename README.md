@@ -20,7 +20,6 @@ This **Single Page Application (SPA)** offers an engaging user experience with s
 | Category   | Technologies Used |
 |------------|------------------|
 | **Frontend**  | React.js, CSS3 |
-| **Backend**   | Node.js, Express.js |
 | **APIs**      | Google Maps API, Moment.js |
 | **Deployment**| Vercel (Frontend) |
 
@@ -36,12 +35,6 @@ jenkinson-sealife/
 │   ├── styles/      # CSS stylesheets
 │   ├── App.js       # Main application file
 │   ├── index.js     # Entry point
-│── server/
-│   ├── models/      # Database models
-│   ├── routes/      # API endpoints
-│   ├── controllers/ # Business logic
-│   ├── server.js    # Express.js server setup
-│── package.json     # Project dependencies
 ```
 
 ---
